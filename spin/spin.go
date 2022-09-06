@@ -26,6 +26,7 @@ type model struct {
 	spinner spinner.Model
 	title   string
 	command []string
+	stdin   string
 	aborted bool
 
 	status int
@@ -39,7 +40,7 @@ type finishCommandMsg struct {
 	status int
 }
 
-func commandStart(command []string) tea.Cmd {
+func commandStart(command []string, stdin string) tea.Cmd {
 	return func() tea.Msg {
 		var args []string
 		if len(command) > 1 {
@@ -50,6 +51,7 @@ func commandStart(command []string) tea.Cmd {
 		var outbuf, errbuf strings.Builder
 		cmd.Stdout = &outbuf
 		cmd.Stderr = &errbuf
+		cmd.Stdin = strings.NewReader(stdin)
 
 		_ = cmd.Run()
 
@@ -70,7 +72,7 @@ func commandStart(command []string) tea.Cmd {
 func (m model) Init() tea.Cmd {
 	return tea.Batch(
 		m.spinner.Tick,
-		commandStart(m.command),
+		commandStart(m.command, m.stdin),
 	)
 }
 func (m model) View() string { return m.spinner.View() + " " + m.title }

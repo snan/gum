@@ -9,6 +9,7 @@ import (
 	tea "github.com/charmbracelet/bubbletea"
 
 	"github.com/charmbracelet/gum/internal/exit"
+	"github.com/charmbracelet/gum/internal/stdin"
 	"github.com/charmbracelet/gum/style"
 )
 
@@ -18,10 +19,12 @@ func (o Options) Run() error {
 	s := spinner.New()
 	s.Style = o.SpinnerStyle.ToLipgloss()
 	s.Spinner = spinnerMap[o.Spinner]
+	in, _ := stdin.Read()
 	m := model{
 		spinner: s,
 		title:   o.TitleStyle.ToLipgloss().Render(o.Title),
 		command: o.Command,
+		stdin:   in,
 	}
 	p := tea.NewProgram(m, tea.WithOutput(os.Stderr))
 	mm, err := p.StartReturningModel()
