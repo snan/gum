@@ -8,7 +8,7 @@ import (
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/mattn/go-isatty"
 
-	"github.com/charmbracelet/gum/internal/exit"
+	"github.com/snan/gum/internal/exit"
 )
 
 // Run provides a shell script interface for the spinner bubble.

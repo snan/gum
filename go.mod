@@ -1,4 +1,4 @@
-module github.com/charmbracelet/gum
+module github.com/snan/gum
 
 go 1.19
 

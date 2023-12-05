@@ -10,7 +10,7 @@ import (
 	"github.com/charmbracelet/lipgloss"
 	"github.com/muesli/termenv"
 
-	"github.com/charmbracelet/gum/internal/exit"
+	"github.com/snan/gum/internal/exit"
 )
 
 const shaLen = 7

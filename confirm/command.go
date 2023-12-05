@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/charmbracelet/gum/internal/exit"
+	"github.com/snan/gum/internal/exit"
 
 	tea "github.com/charmbracelet/bubbletea"
 )

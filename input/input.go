@@ -12,7 +12,7 @@ import (
 
 	"github.com/charmbracelet/bubbles/textinput"
 	tea "github.com/charmbracelet/bubbletea"
-	"github.com/charmbracelet/gum/timeout"
+	"github.com/snan/gum/timeout"
 	"github.com/charmbracelet/lipgloss"
 )
 

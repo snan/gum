@@ -19,8 +19,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/charmbracelet/gum/internal/exit"
-	"github.com/charmbracelet/gum/timeout"
+	"github.com/snan/gum/internal/exit"
+	"github.com/snan/gum/timeout"
 
 	"github.com/charmbracelet/bubbles/spinner"
 	tea "github.com/charmbracelet/bubbletea"

@@ -17,7 +17,7 @@ import (
 
 	"github.com/charmbracelet/bubbles/filepicker"
 	tea "github.com/charmbracelet/bubbletea"
-	"github.com/charmbracelet/gum/timeout"
+	"github.com/snan/gum/timeout"
 )
 
 type model struct {

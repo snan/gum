@@ -12,10 +12,10 @@ import (
 	"github.com/mattn/go-isatty"
 	"github.com/sahilm/fuzzy"
 
-	"github.com/charmbracelet/gum/ansi"
-	"github.com/charmbracelet/gum/internal/exit"
-	"github.com/charmbracelet/gum/internal/files"
-	"github.com/charmbracelet/gum/internal/stdin"
+	"github.com/snan/gum/ansi"
+	"github.com/snan/gum/internal/exit"
+	"github.com/snan/gum/internal/files"
+	"github.com/snan/gum/internal/stdin"
 )
 
 // Run provides a shell script interface for filtering through options, powered

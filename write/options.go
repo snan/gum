@@ -1,6 +1,6 @@
 package write
 
-import "github.com/charmbracelet/gum/style"
+import "github.com/snan/gum/style"
 
 // Options are the customization options for the textarea.
 type Options struct {

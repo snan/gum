@@ -14,7 +14,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/charmbracelet/gum/timeout"
+	"github.com/snan/gum/timeout"
 
 	"github.com/charmbracelet/bubbles/paginator"
 	tea "github.com/charmbracelet/bubbletea"

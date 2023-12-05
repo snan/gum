@@ -12,9 +12,9 @@ import (
 	"github.com/charmbracelet/lipgloss"
 	"github.com/mattn/go-isatty"
 
-	"github.com/charmbracelet/gum/ansi"
-	"github.com/charmbracelet/gum/internal/exit"
-	"github.com/charmbracelet/gum/internal/stdin"
+	"github.com/snan/gum/ansi"
+	"github.com/snan/gum/internal/exit"
+	"github.com/snan/gum/internal/stdin"
 )
 
 var (

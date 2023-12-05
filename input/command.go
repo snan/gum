@@ -7,9 +7,9 @@ import (
 	"github.com/charmbracelet/bubbles/textinput"
 	tea "github.com/charmbracelet/bubbletea"
 
-	"github.com/charmbracelet/gum/cursor"
-	"github.com/charmbracelet/gum/internal/exit"
-	"github.com/charmbracelet/gum/internal/stdin"
+	"github.com/snan/gum/cursor"
+	"github.com/snan/gum/internal/exit"
+	"github.com/snan/gum/internal/stdin"
 )
 
 // Run provides a shell script interface for the text input bubble.

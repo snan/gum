@@ -3,7 +3,7 @@ package confirm
 import (
 	"time"
 
-	"github.com/charmbracelet/gum/style"
+	"github.com/snan/gum/style"
 )
 
 // Options is the customization options for the confirm command.
